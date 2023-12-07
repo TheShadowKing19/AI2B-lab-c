@@ -8,6 +8,7 @@ import { DetailsComponent } from './details/details.component';
 import { AddPersonComponent } from './add-person/add-person.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AppRoutingModule } from './app-routing.module';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AppRoutingModule } from './app-routing.module';
     imports: [
         BrowserModule,
         RouterOutlet,
-        AppRoutingModule
+        AppRoutingModule,
+        FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

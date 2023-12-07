@@ -1,1 +1,8 @@
-<p>list works!</p>
+<ul>
+  <li *ngFor="let person of people; index as i">
+    <a [routerLink]="['/details', i]">
+      ({{ i }}) {{ person.firstName }} {{ person.lastName }}
+    </a>
+    <button class="delete" (click)="delete(i)">Terminate</button>
+  </li>
+</ul>
